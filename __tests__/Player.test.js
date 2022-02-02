@@ -32,3 +32,27 @@ test('gets inventory from player or returns false', () => {
 
   expect(player.getInventory()).toEqual(false);
 });
+
+
+test('checks if player is alive or not', () => {
+  const player = new Player('Dave');
+
+  expect(player.isAlive()).toBeTruthy();
+
+  player.health = 0;
+
+  expect(player.isAlive()).toBeFalsy();
+});
+
+test("subtracts from player's health", () => {
+  const player = new Player('Dave');
+  const oldHealth = player.health;
+
+  Player.prototype.reduceHealth = function(health) {
+    this.health -= health;
+  
+    if (this.health < 0) {
+      this.health = 0;
+    }
+  };
+});
