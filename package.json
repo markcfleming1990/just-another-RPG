@@ -1,25 +1,16 @@
 {
-  "name": "jest-another-rpg",
+  "name": "rpg",
   "version": "1.0.0",
-  "description": "Command line based game",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/markcfleming1990/just-another-RPG.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/markcfleming1990/just-another-RPG/issues"
-  },
-  "homepage": "https://github.com/markcfleming1990/just-another-RPG#readme",
   "dependencies": {
-    "node": "^17.4.0"
-  },
-  "devDependencies": {
-    "jest": "^27.4.7"
+    "inquirer": "^7.0.3",
+    "jest": "^24.9.0"
   }
 }
